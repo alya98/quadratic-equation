@@ -12,6 +12,7 @@ module.exports = function solveEquation(equation) {
   x1=Math.round((Math.pow(d,0.5)-b)/(2*a));
   x2=-Math.round((Math.pow(d,0.5)+b)/(2*a));
   arr.push(x1,x2);
+  arr.sort((a,b)=>a-b)
   return arr;
 }
 //console.log(solveEquation('-20 * x^2 - 108797540 * x - 130011773690520'));
